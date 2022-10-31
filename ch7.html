@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        { //EXERCISE 1
+ const values = [3,11,7,2,9,10];
+ console.log((values[0])+(values[1])+(values[2])+(values[3])+(values[4])+(values[5]))
+        }
+
+        { //EXERCISE 2
+            const musketeers = ["Athos","Porthos","Aramis"];
+            for (let i=0; i < musketeers.length; i++){
+                console.log (musketeers[i]);
+            }
+            musketeers.push("D'Artagnan")
+            console.log ("A new musketeer joins!")
+            musketeers.forEach(musketeer =>{
+                console.log(musketeer);
+            });
+            console.log("oh no!")
+            musketeers.splice(2,1)
+
+            for (musketeer of musketeers){
+                console.log(musketeer)
+            }
+        }
+    </script>
+</body>
+</html>
