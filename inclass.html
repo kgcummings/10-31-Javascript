@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+Name:<input type="text" id="nameinfo"><br>
+Job:<input type="text" id="jobinfo"><br>
+Age:<input type="text" id="ageinfo"><br>
+<button onclick="myFunction()" class="button">SUBMIT</button>
+<div id="textresult"></div>
+<script>
+function myFunction(){
+   let nameinfo = document.getElementById("nameinfo")  
+   let jobinfo = document.getElementById("jobinfo")  
+   let ageinfo = document.getElementById("ageinfo")  
+  document.getElementById("textresult").innerText= `This person's name is ${nameinfo.value}, is working at ${jobinfo.value}, and is ${ageinfo.value} years old.`
+}
+</script>
+</body>
+</html>
