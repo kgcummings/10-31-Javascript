@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        {  //EXERCISE 1 
+            const dog = {
+        name: "spot",
+        species: "greyhound",
+        size: "28 inches",
+
+        bark (){
+            return "woof! woof!!";
+        }
+    }
+        console.log(`${dog.name} is a ${dog.species} dog measuring ${dog.size}`);
+        console.log(`Look, a cat! ${dog.name} barks: ${dog.bark()}`);    
+        }
+
+        { //EXERCISE 2
+// TODO: create the character object here
+    const aurora = {
+        xp: 0,
+        health: 250,
+        strength: 50,
+        name: "aurora",
+
+    describe (){
+        return `${aurora.name} has ${aurora.health} health points, ${aurora.strength} strength points, and ${aurora.xp} XP.`
+        }
+}
+
+// Aurora is harmed by an arrow
+aurora.health -= 20;
+
+// Aurora equips a strength necklace
+aurora.strength += 10;
+
+// Aurora learn a new skill
+aurora.xp += 15;
+
+console.log(aurora.describe())
+
+}
+
+    </script>
+</body>
+</html>
